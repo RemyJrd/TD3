@@ -21,16 +21,32 @@ int *createarray()
     return array;
 }
 
-int main()
+int indexinsert()
 {
-    srand(time(0));
-    int i;
 
-    printf("--- Creation tableaux... --- \n");
-    int *array = createarray();
+}
+
+void* showarray(int* array) 
+{
+    int i;
     printf("-- Affichage Tableau --\n");
+    printf("|  Indice - valeur  | \n");
     for (i = 0; i < 10; i++)
     {
-        printf(" - %d | %d", array[i], i);
+        printf("\n|  %d - %d  |", i+1, array[i]);
     }
+}
+
+int main()
+{
+    int insertindex, insertvalue;
+    srand(time(0));
+    printf("--- Creation tableaux... --- \n");
+    int *array = createarray();
+    showarray(array);
+    printf("\n--- Insertion indice --- \n");
+    printf("L'indice ou inserer :");
+    printf("\nLa valeur a inserer: ");
+
+
 }
