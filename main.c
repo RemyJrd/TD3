@@ -46,7 +46,8 @@ int main()
     showarray(array);
     printf("\n--- Insertion indice --- \n");
     printf("L'indice ou inserer :");
+    scanf("%d",&insertindex);
     printf("\nLa valeur a inserer: ");
-
+    scanf("%d", &insertvalue);
 
 }
